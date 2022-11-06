@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidemen®</title>
+
+    <style>
+        .tab1 {
+            background-image: url(/sidemen1.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+
+        }
+
+        .youtube {
+            position: relative;
+            display: inline-block;
+        }
+
+        .youtube .img-top1 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            transition: all 1s;
+        }
+
+        .youtube:hover .img-top1 {
+            cursor: pointer;
+            background-color: #000;
+            display:inline;
+            transform:scale(1.2);
+        }
+
+
+        .instagram:hover {
+            cursor: pointer;
+        }
+
+        .twitter:hover {
+            cursor: pointer;
+        }
+
+        .facebook:hover {
+            cursor: pointer;
+        }
+
+        .snapchat:hover {
+            cursor: pointer;
+        }
+
+        .tiktok:hover {
+            cursor: pointer;
+        }
+
+        .holder {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .tile3 {
+            background-image: url(/sidement2.1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: all 0.4s;
+        }
+
+        .tile3:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .tile4:hover {
+            cursor: pointer;
+        }
+
+        .tile5:hover {
+            cursor: pointer;
+        }
+
+        .tile4 {
+            background-image: url(/sidement2.2.webp);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+        }
+
+        .tile5 {
+            background-image: url(/sidement2.3.jpeg);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+        }
+
+        .inf1 {
+            background-image: url(/sidement3.1.webp);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .inf2 {
+            background-image: url(/sidement3.2.webp);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .inf3 {
+            background-image: url(/sidement3.3.webp);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .inf4 {
+            background-image: url(/sidement3.4.webp);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .inf5 {
+            background-image: url(/sidement3.5.webp);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .inf6 {
+            background-image: url(/sidement3.6.jpeg);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .inf7 {
+            background-image: url(/sidement3.7.webp);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .inf8 {
+            background-image: url(/sidement3.8.webp);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .tag:hover {
+            cursor: pointer;
+        }
+
+        .form-submit {
+            position: absolute;
+            z-index: 1;
+            border: none;
+            width: 35px;
+            height: 35px;
+            margin-top: 6px;
+            margin-right: 6px;
+            border-radius: 6px;
+            background-color: #0028f5;
+            background-image: url('https://assets-global.website-files.com/60644a76ea9749c206ea51ae/606e0f275ba0fdb7320b1c32_Channel%20Arrow%20Right.svg');
+            background-position: 50% 50%;
+            background-size: 15px;
+            background-repeat: no-repeat;
+        }
+
+        .links1 {
+            color: #8f8f8f;
+        }
+
+        .links1:hover {
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .form-submit:hover {
+            cursor: pointer;
+        }
+
+        .site-by {
+            color: white;
+        }
+
+        .site-by:hover {
+            cursor: pointer;
+            color: #0028f5;
+        }
+
+        .inf1:hover {
+            cursor: pointer;
+        }
+
+        .inf2:hover {
+            cursor: pointer;
+        }
+
+        .inf3:hover {
+            cursor: pointer;
+        }
+
+        .inf4:hover {
+            cursor: pointer;
+        }
+
+        .inf5:hover {
+            cursor: pointer;
+        }
+
+        .inf6:hover {
+            cursor: pointer;
+        }
+
+        .inf7:hover {
+            cursor: pointer;
+        }
+
+        .inf8:hover {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #171717;">
+    <nav class="node1">
+
+        <div class="top1" style="display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2vh;">
+
+            <div class="tab1" style="height: 39vh;
+            margin-right: 4vh;
+            width: 38vh;
+            border: none;
+            border-radius: 18px;">
+                <div style="display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-content: center;
+                    justify-content: center;
+                    align-items: center;">
+                    <img src="/sidemen1.1.png" style="height: 60px;
+                    margin-top: 15vh; " alt="">
+                </div>
+            </div>
+
+            <div style="height: 39vh;
+            width: 55vh;
+            border: 1px solid #333;
+            font-size: 19px;
+            border-radius: 18px;
+            background-color: #1a1a1a;">
+                <div style="padding: 50px;
+            color: #fff;
+            font-family: roc-grotesk,sans-serif;
+            margin-top: 7vh;
+            line-height: 30px;">
+                    A group of friends with a few videos online, over 93 million fans and billions of views
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <nav style="display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;">
+
+        <div class="logos" style="
+        margin-top: 18px;
+        display: flex;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        background-color: #000;
+        border-radius: 18px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+        border: 1px solid #1a1a1a;
+        padding-left: 8vh;
+        padding-right: 8vh;
+        width: 80vh;">
+
+            <div class="youtube">
+                <img src="https://assets-global.website-files.com/60644a76ea9749c206ea51ae/60644e5975da23021680ae19_Component%2099%20%E2%80%93%2016.svg"
+                    loading="lazy" alt="YouTube Logo" class="social-link__icon" alt="yt1"
+                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    id="Layer_1" x="0px" y="0px" viewBox="0 0 23.4 16.1" style="enable-background:new 0 0 23.4 16.1;"
+                    xml:space="preserve" class="img-top1" alt="yt2">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #0028F5;
+                        }
+                    </style>
+                    <path class="st0"
+                        d="M22.4,1.5c-0.6-1.2-1.3-1.3-2.7-1.4C18.3,0,14.7,0,11.7,0s-6.6,0.1-8,0.1S1.6,0.4,1,1.5C0.3,2.7,0,4.6,0,8l0,0  c0,3.4,0.4,5.4,1,6.5c0.7,1.2,1.3,1.3,2.7,1.5c1.4,0.1,4.9,0.1,8,0.1s6.6-0.1,8-0.1c1.4-0.1,2.1-0.3,2.7-1.5c0.7-1.1,1-3.1,1-6.5  l0,0C23.5,4.6,23.1,2.6,22.4,1.5z M8.8,12.4V3.6L16.1,8L8.8,12.4z" />
+                </svg>
+
+            </div>
+
+            <div class="instagram">
+                <img src="https://assets-global.website-files.com/60644a76ea9749c206ea51ae/60644e5980d64bdecb3965db_Component%20100%20%E2%80%93%2016.svg"
+                    loading="lazy" alt="Instagram Logo" class="social-link__icon"
+                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+                    
+            </div>
+
+            <div class="twitter">
+                <img src="https://assets-global.website-files.com/60644a76ea9749c206ea51ae/60644e59a1481ee0e3173f57_Component%20101%20%E2%80%93%2016.svg"
+                    loading="lazy" alt="Twitter Logo" class="social-link__icon"
+                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+            </div>
+
+            <div class="facebook">
+                <img src="https://assets-global.website-files.com/60644a76ea9749c206ea51ae/60644e59ba3ee809fe7723a6_Path%20424.svg"
+                    loading="lazy" alt="Facebook Logo" class="social-link__icon"
+                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+            </div>
+
+            <div class="snapchat">
+                <img src="https://assets-global.website-files.com/60644a76ea9749c206ea51ae/60644e59ab767034dfda0c46_Group%203638.svg"
+                    loading="lazy" alt="Snapchat Logo" class="social-link__icon"
+                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+            </div>
+
+            <div class="tiktok">
+                <img src="https://assets-global.website-files.com/60644a76ea9749c206ea51ae/60644e59f3fe1097a6615981_tik-tok.svg"
+                    loading="lazy" alt="TikTok Logo" class="social-link__icon"
+                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+            </div>
+
+        </div>
+    </nav>
+
+    <nav style=" margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-right: 5vh;">
+        <div class="holder" style="margin-left: 40px;
+        display: flex;
+        flex-direction: column;">
+            <div class="tile3" style="margin-top: 16px;
+            height: 23vh;
+            width: 40vh;
+            border-radius: 24px;">
+
+                <div style="position: relative;
+            background-color: #171717;
+            font-weight: 900;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 100PX;
+            color: #fff;
+            padding: 4px 9px 4px 10px;
+            font-family: Inter, sans-serif;
+            font-size: 13px;
+            margin-top: 18vh;">
+                    WORK WITH US
+                </div>
+
+            </div>
+
+            <div class="tile4" style="margin-top: 10px;
+            height: 23vh;
+            width: 40vh;
+            border-radius: 18px;">
+
+                <div style="position: relative;
+            background-color: #171717;
+            font-weight: 900;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 100PX;
+            color: #fff;
+            padding: 4px 9px 4px 10px;
+            font-family: Inter, sans-serif;
+            font-size: 13px;
+            margin-top: 18vh;">
+                    GET IN TOUCH
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="tile5" style="margin-top: 10px;
+        margin-left: 12px;
+        height: 49vh;
+        width: 54vh;
+        border-radius: 18px;">
+
+            <div style="position: relative;
+            background-color: #171717;
+            font-weight: 900;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 70PX;
+            color: #fff;
+            padding: 4px 18px 4px 20px;
+            font-family: Inter, sans-serif;
+            font-size: 15px;
+            margin-top: 44vh;">
+                CLOTHING
+            </div>
+        </div>
+
+    </nav>
+
+    <!--YOUTUBE VIDEO-->
+    <nav style="padding-left: 5vh;
+    padding-right: 5vh;
+    margin-top: 14px;">
+        <div style="
+        height: 500px;
+        border: none;
+        border-radius: 18px;">
+            <iframe class="youtube-video"
+            style="height: 500px;
+            width: 100%;
+            border: none;
+            border-radius: 18px;"
+                src="https://www.youtube.com/embed/O9clzzxE4BM?controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""></iframe>
+        </div>
+    </nav>
+
+    <nav style="margin-top: 2vh;
+    display: flex;
+    justify-content: center;">
+        <div class="inf1" style="border-radius: 18px;
+        height: 57vh;
+        width: 45vh;">
+
+        </div>
+
+        <div class="inf2" style=" margin-left: 16px;
+        border-radius: 18px;
+        height: 57vh;
+        width: 45vh;">
+
+        </div>
+
+    </nav>
+
+    <nav style="margin-top: 2vh; 
+    display: flex;
+    justify-content: center;">
+        <div class="inf3" style="border-radius: 18px;
+        height: 57vh;
+        width: 45vh;">
+
+        </div>
+
+        <div class="inf4" style=" margin-left: 16px;
+        border-radius: 18px;
+        height: 57vh;
+        width: 45vh;">
+
+        </div>
+
+    </nav>
+
+    <nav style="margin-top: 2vh;
+    display: flex;
+    justify-content: center;">
+        <div class="inf5" style="border-radius: 18px;
+        height: 57vh;
+        width: 45vh;">
+
+        </div>
+
+        <div class="inf6" style=" margin-left: 16px;
+        border-radius: 18px;
+        height: 57vh;
+        width: 45vh;">
+
+        </div>
+
+    </nav>
+
+    <nav style="margin-top: 2vh;
+    display: flex;
+    justify-content: center;">
+        <div class="inf7" style="border-radius: 18px;
+        height: 57vh;
+        width: 45vh;">
+
+        </div>
+
+        <div class="inf8" style=" margin-left: 16px;
+        border-radius: 18px;
+        height: 57vh;
+        width: 45vh;">
+
+        </div>
+
+    </nav>
+
+    <nav style=" margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;">
+        <div class="tag" style=" display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 14px;
+        height: 22vh;
+        width: 21vh;
+        background-color: #000;">
+            <img src="/sidement4.1.webp" style="height: 16vh; width: 16vh;
+        border-radius: 100%;" alt="" />
+        </div>
+
+        <div class="tag" style=" display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 14px;
+        height: 22vh;
+        width: 21vh;
+        background-color: #000;">
+            <img src="/sidement4.2.webp" style="height: 15vh; width: 15vh;
+        border-radius: 100%;" alt="" />
+        </div>
+
+        <div class="tag" style=" display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 14px;
+        height: 22vh;
+        width: 21vh;
+        background-color: #000;">
+            <img src="/sidement4.3.webp" style="height: 15vh; width: 15vh;
+        border-radius: 100%;" alt="" />
+        </div>
+
+        <div class="tag" style=" display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 14px;
+        height: 22vh;
+        width: 21vh;
+        background-color: #000;">
+            <img src="/sidement4.4.jpeg" style="height: 15vh; width: 15vh;
+        border-radius: 100%;" alt="" />
+        </div>
+
+    </nav>
+
+    <nav style="padding-left: 5vh;
+    padding-right: 5vh;
+    margin-top: 154px;">
+        <div class="footer1" style="
+        padding: 32px;
+        background-color: #1a1a1a;
+        border: 1px solid #333;
+        border-radius: 18px;
+        font-size: 13px;
+        font-family: roc-grotesk,sans-serif;">
+
+            <div style="display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: nowrap;">
+                <div style="width: 11vh;
+            margin-left: -45px;
+            ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 789.84 214.18">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #fff;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="svg34">
+                                <path id="path8" class="cls-1"
+                                    d="M554.84,161.66H518.62c-2.07-41.67-4.12-82.89-6.18-124.37,1.61-1.06,3.22-2.14,5.61-3.73H493.34c1.62,39.12,3.23,77.84,4.88,117.7l-36.7-21.67c-.83-30.69-1.66-61.18-2.49-91.65l5.83-3.51H440c.8,42.11,1.6,84,2.4,126.16H406.25V14.51l139.09-2.45C548.5,61.89,551.69,111.51,554.84,161.66Z" />
+                                <path id="path10" class="cls-1"
+                                    d="M665.6,6.51,760.76,0q11.58,84.41,23.07,168.19h-36c-6-46.69-11.8-92.6-17.67-138.69l6.26-4.82-34.1,1.82c5.55,46.75,11,93.11,16.55,139.38h-36C677.05,112.51,671.35,59.75,665.6,6.51Z" />
+                                <path id="path12" class="cls-1"
+                                    d="M107.35,165.33,6.2,169.15c3.17-23.21,6.29-46.06,9.42-69H50.93c-1.75,13.84-3.46,27.26-5.14,40.52l-6.54,3.93H73.74c1.79-15.08,3.53-29.68,5.27-44.28L19.83,69.61C23,46.41,26.14,23.51,29.35,0l95.17,6.51c-2.35,21.78-4.66,43.13-7,64.52h-35c1.63-13.79,3.19-27,4.73-40.1L93,27.66l-.16-.91L60.59,25c-1.9,15-3.84,29.74-5.9,45.35l59.65,30C112.05,122,109.69,143.51,107.35,165.33Z" />
+                                <path id="path14" class="cls-1"
+                                    d="M283.05,13c-2,42-4,83.58-6,125.56-8.76,7.34-17.63,14.84-26.6,22.23a6.43,6.43,0,0,1-3.67,1.15q-35.19.83-70.39,1.51a10.52,10.52,0,0,1-1.74-.51C179,112.15,183.34,61.2,187.74,9.74Zm-62.7,19.31q-3.89,53.21-7.66,105.41l-5.88,3.66H241c2.19-35.25,4.34-70,6.5-104.73l5.72-3.37-.36-1Z" />
+                                <path id="path16" class="cls-1"
+                                    d="M557.83,11.51,653.1,7.2c2.24,21.66,4.44,42.87,6.7,64.64h-35q-1.72-18.4-3.5-37.48l5-3.59H593.69c1.4,17.1,2.72,33.36,4.06,49.81h18.12l12,10.52a9.34,9.34,0,0,1-.16,1.15h-29c1.26,15.94,2.44,30.94,3.62,45.91l-5,2.88v.87h33.81c-1.18-13.45-2.38-27.22-3.63-41.4h35.27c2.2,21.19,4.41,42.4,6.69,64.38l-101.29-2.5Z" />
+                                <path id="path18" class="cls-1"
+                                    d="M297.63,13.92h95v60H358.48V38.29l6.39-3.86H330.94V81.51h16.75c3.93,3.67,7.61,7.1,12.19,11.39H329.24v43.51l-7.55,4.18h35.49V101h35.44v59.78H291.49Q294.57,87.28,297.63,13.92Z" />
+                                <path id="path20" class="cls-1"
+                                    d="M786.29,186.42c1.23,8.78,2.39,17,3.49,25.17a13.9,13.9,0,0,1,0,2.58L476,200.08l-9.92-11.3,10.42-12.61C579.69,177.26,682.69,180.74,786.29,186.42Z" />
+                                <path id="path22" class="cls-1"
+                                    d="M0,214.18c1.18-8.59,2.44-17.77,3.81-27.67,103-5.76,206.05-9.13,309.75-10.31L324,188.77l-9.85,11.37Z" />
+                                <path id="path24" class="cls-1"
+                                    d="M159.08,164.19H123c5.35-52,10.72-104.15,16.16-157l34.08,1.72C168.48,60.7,163.83,112,159.08,164.19Z" />
+                                <path id="path26" class="cls-1"
+                                    d="M458.34,206.65H441.69l-7.79-9.49-7.22,9.2H409.8L424.47,188l-13.78-17.46h16.48c1.9,2.42,4.12,5.23,6.53,8.31l6.3-8.33h16.65c-4.8,6.24-9.06,11.79-13.47,17.54Z" />
+                                <path id="path28" class="cls-1"
+                                    d="M365.69,188c4.84,6.06,9.38,11.76,14.44,18.11H363.35l-7.17-8.91-7.64,9.31H332l15-18.41-13.19-17.34h16.48l6.27,8,6.59-8.41h16.44Z" />
+                                <path id="path30" class="cls-1" d="M388.42,170.41h13.45v35.73H388.42Z" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
+                <div style="display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 10px;">
+                    <span class="links1" style="margin-bottom: 14px;">Work With Us</span>
+                    <span class="links1" style="margin-bottom: 14px;">Clothing</span>
+                    <span class="links1" style="margin-bottom: 14px;">Get In Touch</span>
+                    <span class="links1" style="margin-bottom: 14px;">Side+</span>
+                    <span class="links1">XIX Vodka</span>
+                </div>
+
+                <div style="display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: -50px;">
+                    <span class="links1" style="margin-bottom: 13px;">Sides</span>
+                    <span class="links1" style="margin-bottom: 13px;">Arcade Media</span>
+                    <span class="links1" style="margin-bottom: 13px;">Privacy Policy</span>
+                    <span class="links1" style="margin-bottom: 13px;">Cookies</span>
+                    <span class="links1">Terms and Conditions</span>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <nav class="footer2" style="padding-left: 5vh;
+    padding-right: 5vh;
+    margin-top: 24px;">
+        <div style="
+        padding: 18px;
+        background-color: #1a1a1a;
+        border: 1px solid #333;
+        border-radius: 18px;
+        color: #8f8f8f;
+        font-size: 13px;
+        font-family: roc-grotesk,sans-serif;">
+
+            <div style="display: flex;
+            flex-direction: column;">
+                <span style="color: #fff;
+                margin-bottom: 20px;
+                font-size: 16px;
+                font-weight: 600;"> Latest News </span>
+                <span style="color: hsla(0,0%,100%,.5);
+                font-family: roc-grotesk,sans-serif;
+                font-size: 13px;
+                line-height: 19px;
+                margin-bottom: 10px;"> Chuck your email in here to stay up to date with all things Sidemen, direct to
+                    your inbox</span>
+                <span style="font-size: 10px;
+                line-height: 17px;"> By adding your email you accept our terms and conditions</span>
+            </div>
+
+            <div style=" margin-top: 12px;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: flex-end;
+                align-items: center;
+                flex-wrap: nowrap;">
+                <input type="email" placeholder="Email Address" style=" border: 1px solid #4a4a4a; 
+                width: 100vh; 
+                color: #fff;
+                font-size: 14px;
+                margin-right: 2px; 
+                margin-top: 5px;
+                height: 44px; 
+                padding-left: 12px; 
+                border-radius: 6px; 
+                background-color: hsla(0,0%,100%,.08);" />
+                <input type="button" class="form-submit" />
+            </div>
+        </div>
+
+    </nav>
+
+    <nav class="footer3" style="padding-left: 5vh;
+    padding-right: 5vh;
+    margin-top: 30px;
+    padding-bottom: 45px;">
+        <div style="display: flex;
+        margin-top: 80px;
+        font-family: Inter,sans-serif;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #5a5a5a;
+        font-size: 12px;">
+            <span style="color: #4a4a4a;">
+                Copyright © Sidemen Entertainment Limited All Rights Reserved TM 2021 -
+            </span>
+
+            <span class="site-by" style="margin-left: 4px;">
+                Site by ACIDTEST design
+            </span>
+
+        </div>
+    </nav>
+
+
+
+</body>
+
+</html>
